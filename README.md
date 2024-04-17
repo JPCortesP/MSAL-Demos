@@ -6,7 +6,13 @@ this is a simple demo (might eventually be a set of demos) of MSAL. A few notes:
 
 Having said that, this proyect contains:
 - A simple app that loads all the users and all the devices on a given tenant, using the Graph API, authenticated with MSAL.
-- A simple secrets management (plain text storage in "C:\SecretsStorage" so I don't have to push them to GitHub.
+- A simple secrets management (plain text storage in "C:\SecretsStorage") so I don't have to push them to GitHub.
 - Windows credentials caching so you don't have to type them every time.
 - Windows accounts integration so you might as well never have to type your credentials at all.
-- A set of helpers, including Users and Devices objects helpers. 
+- A set of helpers, including Users and Devices objects helpers.
+
+
+Using this. 
+- Clone, restore and run.
+- On first run, go to C:\SecretsStorage and open the json file, add your client ID and Tenant ID from entra and should work.
+- Please note that this is barebones, which means, edge cases, most exceptions and some authorization errors are not catched. So elevate yourself before running or extend it. 
